@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+/**************BODY OCH CONTAINTER**************/
+body {
+    background-color: #ffffff;
+}
+
+.container {
+    max-width: 1920px;
+    width: 100%;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*SINGLE.PHP STYLING*/
+.single {
+    max-width: 50%;
+    margin: auto;
+    padding-bottom: 2%;
+}
+
+/*STYLING BUTTON*/
+.button {
+    border: none;
+    background-color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+/**************HUVUDMENY**************/
+#menu {
+    display: block;
+}
+
+#menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+    margin-top: 100px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    background-color: white;
+}
+
+#menu li {
+    display: inline;
+    margin-right: 10px;
+}
+
+#menu a {
+    text-decoration: none;
+    color: #707070;
+}
+
+#menu a:hover {
+    text-decoration: underline;
+}
+
+#menu .current-menu-item a,
+.current-page-ancestor a,
+.current-post-ancestor a {
+    text-decoration: underline;
+}
+
+#menu img {
+    padding-left: 15px;
+}
+
+/**************MOBILMENY**************/
+#menu-mobile {
+    display: none;
+}
+
+#links-mobile {
+    display: none;
+}
+
+/*IKON FÖR MOBILMENY*/
+.topnav .icon {
+    display: none;
+}
+
+.topnav {
+    display: none;
+}
+
+/*KLASS FÖR RESPONSIVA HEADERS OCH LOGOTYP*/
+img.header {
+    max-width: 100%;
+    height: auto;
+}
+
+img.headermobile {
+    display: none;
+}
+
+img.logo {
+    max-width: 100%;
+    height: auto;
+}
+
+/*KLASSER FÖR TVÅ-KOLUMNSDESIGN*/
+.row {
+    display: flex;
+    width: 95%;
+    margin: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex: 40%;
+    max-width: 381px;
+    padding: 4%;
+}
+
+/*TREKOLUMNSDESIGN*/
+.column3 {
+    flex: 32%;
+    max-width: 381px;
+    padding-left: 1%;
+}
+
+/*RUBRIKER*/
+h1, h2, h3 {
+    font-family: 'Varela Round', sans-serif;
+    color: #485C4E;
+}
+
+h1 {
+    text-align: center;
+}
+
+/*RESPONSIV THUMBNAIL*/
+.thumbnail img {
+    width: 100%;
+    height: auto;
+    max-width: 381px;
+}
+
+/*"BANNERN" MED "BOKA HÄR"*/
+.book-now {
+    background-color: #621222;
+    padding: 25px;
+    text-align: center;
+    max-width: 1920px;
+    margin: auto;
+}
+
+.book-now a {
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 25px;
+    border: 1px white;
+}
+
+/*LÄNK TILL ALLA NYHETER PÅ INDEX.PHP*/
+.newslink {
+    font-family: 'Varela Round', sans-serif;
+    text-align: center;
+    margin: auto;
+}
+
+.newslink a {
+    color: #485C4E;
+}
+
+/**************FOOTER**************/
+footer {
+    text-align: center;
+    background-color: #194024;
+    height: 159px;
+}
+
+footer img {
+    margin-top: 1%;
+    height: 46px;
+    width: 104px;
+}
+
+footer p {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+/**************TABLET**************/
+@media screen and (max-width: 1024px) {
+    img.header {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+
+    img.headermobile {
+        display: none;
+    }
+
+    #menu-mobile {
+        display: block;
+        border-bottom: 1px solid #333333;
+    }
+
+    #menu-mobile .icon {
+        float: right;
+        padding-top: 60px;
+        padding-right: 20px;
+        font-size: 30px;
+        color: #C96F13;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    #links-mobile {
+        display: none;
+        text-align: center;
+        border-bottom: 1px solid #333333;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    #links-mobile ul {
+        list-style-type: none;
+    }
+
+    #links-mobile a {
+        text-decoration: none;
+        color: #707070;
+        font-size: 20px;
+    }
+
+    #links-mobile li {
+        padding-bottom: 2%;
+    }
+}
+
+/**************MOBILE**************/
+@media screen and (max-width: 768px) {
+    img.header {
+        display: none;
+    }
+
+    img.headermobile {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+
+
+    .row {
+        display: block;
+        width: 100%;
+    }
+
+    .column {
+        margin: auto;
+    }
+
+    .column3 {
+        margin: auto;
+    }
+
+
+    .single {
+        padding-left: 5%;
+        max-width: 100%;
+        margin: auto;
+    }
+
+}
